@@ -1,36 +1,41 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# shopLater - Full Stack E-commerce Application
 
-## Getting Started
+## Overview
 
-First, run the development server:
+shopLater is a full-stack e-commerce web application built using Next.js and TypeScript. It allows users to browse products, post feedback, manage a shopping cart, and make purchases through a payment gateway. The project is structured to provide CRUD operations for products and user posts, with plans to implement authentication using NextAuth, and integrate additional features like payment gateways.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Product Management**:
+  - Create, Read, Update, and Delete (CRUD) operations for products.
+  - Product listing with details such as name, description, price, and images.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **User Feedback**:
+  - Users can post feedback on products.
+  - Feedback includes ratings and comments.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- **Shopping Cart**:
+  - Users can add products to their shopping cart.
+  - Cart management including adding, removing, and updating quantities.
 
-## Learn More
+- **Payment Gateway Integration**:
+  - Integration with a payment gateway for secure transactions.
 
-To learn more about Next.js, take a look at the following resources:
+## Technologies Used
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Frontend**:
+  - Next.js: React framework for server-rendered applications.
+  - TypeScript: Typed superset of JavaScript.
+  - NextAuth: Authentication library for Next.js applications.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- **Backend**:
+  - Prisma: ORM (Object-Relational Mapping) for PostgreSQL.
+  - PostgreSQL: Relational database management system.
+  - Express.js: Web application framework for Node.js.
 
-## Deploy on Vercel
+## Installation
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. Clone the repository:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+   ```bash
+   git clone https://github.com/your/repository.git

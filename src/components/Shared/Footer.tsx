@@ -1,44 +1,162 @@
 import React from 'react';
+import Title from '../title/Tittle';
+import { FaDribbble, FaFacebook, FaInstagram, FaTwitter } from 'react-icons/fa';
 
 const Footer: React.FC = () => {
     return (
-        <footer className="bg-white py-12 px-4 sm:px-6 lg:px-8">
-            <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-y-10">
-                {/* About Us */}
-                <div className="space-y-4">
-                    <h3 className="text-lg font-semibold text-gray-800">About Us</h3>
-                    <p className="text-gray-600">shopLater is your destination for all things fashion. From trendy streetwear to classic formal attire, we've got you covered. </p>
-                </div>
+        <footer className="bg-white">
+            <div className="mx-auto max-w-screen-xl space-y-8 px-4 py-16 sm:px-6 lg:space-y-16 lg:px-8">
+                <div className="sm:flex sm:items-center sm:justify-between">
+                    <div className="text-teal-600">
+                      <Title name="shopLater" />
+                    </div>
 
-                {/* Categories */}
-                <div className="space-y-4">
-                    <h3 className="text-lg font-semibold text-gray-800">Categories</h3>
-                    <ul className="text-gray-600">
-                        <li>Men's Clothing</li>
-                        <li>Women's Clothing</li>
-                        <li>Kids' Clothing</li>
-                        <li>Accessories</li>
+                    <ul className="mt-8 flex justify-start gap-6 sm:mt-0 sm:justify-end">
+                        <li>
+                            <a
+                                href="#"
+                                rel="noreferrer"
+                                target="_blank"
+                                className="text-green-500 transition hover:opacity-75"
+                            >
+                                <span className="sr-only">Facebook</span>
+
+                                <FaFacebook />
+                            </a>
+                        </li>
+
+                        <li>
+                            <a
+                                href="#"
+                                rel="noreferrer"
+                                target="_blank"
+                                className="text-green-500 transition hover:opacity-75"
+                            >
+                                <span className="sr-only">Instagram</span>
+
+                                <FaInstagram />
+                            </a>
+                        </li>
+
+                        <li>
+                            <a
+                                href="#"
+                                rel="noreferrer"
+                                target="_blank"
+                                className="text-green-500 transition hover:opacity-75"
+                            >
+                                <span className="sr-only">Twitter</span>
+
+                                <FaTwitter />
+                            </a>
+                        </li>
+
+                     
+
+                        <li>
+                            <a
+                                href="#"
+                                rel="noreferrer"
+                                target="_blank"
+                                className="text-green-500 transition hover:opacity-75"
+                            >
+                                <span className="sr-only">Dribbble</span>
+
+                                <FaDribbble />
+                            </a>
+                        </li>
                     </ul>
                 </div>
 
-                {/* Contact Us */}
-                <div className="space-y-4">
-                    <h3 className="text-lg font-semibold text-gray-800">Contact Us</h3>
-                    <p className="text-gray-600">1234 Main Street<br />New York, NY 10001<br />info@shoplater.com<br />(123) 456-7890</p>
-                </div>
+                <div
+                    className="grid grid-cols-1 gap-8 border-t border-gray-100 pt-8 sm:grid-cols-2 lg:grid-cols-4 lg:pt-16"
+                >
+                    <div>
+                        <p className="font-medium text-gray-900">Services</p>
 
-                {/* Newsletter */}
-                <div className="space-y-4">
-                    <h3 className="text-lg font-semibold text-gray-800">Newsletter</h3>
-                    <p className="text-gray-600">Subscribe to our newsletter for exclusive deals and updates.</p>
-                    <div className="flex">
-                        <input type="email" placeholder="Enter your email" className="px-4 py-2 w-full rounded-l-md border border-gray-300 focus:outline-none focus:border-green-500" />
-                        <button className="bg-green-500 text-white px-4 py-2 rounded-r-md hover:bg-green-600 focus:outline-none focus:bg-green-600">Subscribe</button>
+                        <ul className="mt-6 space-y-4 text-sm">
+                            <li>
+                                <a href="#" className="text-gray-700 transition hover:opacity-75"> 1on1 Coaching </a>
+                            </li>
+
+                            <li>
+                                <a href="#" className="text-gray-700 transition hover:opacity-75"> Company Review </a>
+                            </li>
+
+                            <li>
+                                <a href="#" className="text-gray-700 transition hover:opacity-75"> Accounts Review </a>
+                            </li>
+
+                            <li>
+                                <a href="#" className="text-gray-700 transition hover:opacity-75"> HR Consulting </a>
+                            </li>
+
+                            <li>
+                                <a href="#" className="text-gray-700 transition hover:opacity-75"> SEO Optimisation </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <p className="font-medium text-gray-900">Company</p>
+
+                        <ul className="mt-6 space-y-4 text-sm">
+                            <li>
+                                <a href="#" className="text-gray-700 transition hover:opacity-75"> About </a>
+                            </li>
+
+                            <li>
+                                <a href="#" className="text-gray-700 transition hover:opacity-75"> Meet the Team </a>
+                            </li>
+
+                            <li>
+                                <a href="#" className="text-gray-700 transition hover:opacity-75"> Accounts Review </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <p className="font-medium text-gray-900">Helpful Links</p>
+
+                        <ul className="mt-6 space-y-4 text-sm">
+                            <li>
+                                <a href="#" className="text-gray-700 transition hover:opacity-75"> Contact </a>
+                            </li>
+
+                            <li>
+                                <a href="#" className="text-gray-700 transition hover:opacity-75"> FAQs </a>
+                            </li>
+
+                            <li>
+                                <a href="#" className="text-gray-700 transition hover:opacity-75"> Live Chat </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <p className="font-medium text-gray-900">Legal</p>
+
+                        <ul className="mt-6 space-y-4 text-sm">
+                            <li>
+                                <a href="#" className="text-gray-700 transition hover:opacity-75"> Accessibility </a>
+                            </li>
+
+                            <li>
+                                <a href="#" className="text-gray-700 transition hover:opacity-75"> Returns Policy </a>
+                            </li>
+
+                            <li>
+                                <a href="#" className="text-gray-700 transition hover:opacity-75"> Refund Policy </a>
+                            </li>
+
+                            <li>
+                                <a href="#" className="text-gray-700 transition hover:opacity-75"> Hiring Statistics </a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-            </div>
-            <div className="mt-8 text-center text-gray-600">
-                <p>shopLater &copy; {new Date().getFullYear()} by Furqan Ahmad. All rights reserved.</p>
+
+                <p className="text-xs text-gray-500">&copy; 2022. Company Name. All rights reserved.</p>
             </div>
         </footer>
     );

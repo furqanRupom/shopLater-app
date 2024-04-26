@@ -1,6 +1,7 @@
 
 import EcommerceBanner from '@/components/home/Banner';
 import Completed from '@/components/home/completed';
+import Title from '@/components/title/Tittle';
 import Link from 'next/link';
 import * as React from 'react';
 
@@ -8,7 +9,7 @@ interface IAllProductsPageProps {
 }
 
 const AllProductsPage: React.FunctionComponent<IAllProductsPageProps> = async (props) => {
-    const res = await fetch('https://dummyjson.com/products',{
+    const res = await fetch('https://fakestoreapi.com/products',{
        next:{
         revalidate:30
        }
@@ -31,10 +32,12 @@ const AllProductsPage: React.FunctionComponent<IAllProductsPageProps> = async (p
             promo=""
         />
 
+        <Title name="All available products" />
+
 
         <section className='grid grid-cols-2 max-w-7xl mx-auto gap-12 py-12 '>
             {
-                productsData?.products?.map((product: any) => <Completed key={product.id} product={product} />)
+                productsData?.map((product: any) => <Completed key={product.id} product={product} />)
             }
         </section>
 

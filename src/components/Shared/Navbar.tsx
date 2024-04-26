@@ -25,26 +25,27 @@ export const NavBar = () => {
                     >
                         <Navbar.Link linkName="Home" href="/" />
                         <Navbar.Link linkName="Prouducts" href="/product" />
+                        <Navbar.Link linkName="Gallery" href="/gallery" />
                         <Navbar.Link linkName="Posts" href="/posts" />
                     </Navbar.Container>
                     <Navbar.Collapse collapseType="sidebar">
                         <Navbar.Container tag="ul" className="flex flex-col gap-5 ">
                             <Navbar.Link linkName="Home" href="/" />
                             <Navbar.Link linkName="Prouducts" href="/product" />
+                            <Navbar.Link linkName="Gallery" href="/gallery" />
                             <Navbar.Link linkName="Posts" href="/posts" />
                         </Navbar.Container>
                     </Navbar.Collapse>
                 </Navbar.Container>
 
                 <Navbar.Container className="flex gap-2">
-                    <Button size="sm" variant="link">
-                        <span>
-                            <MagnifyingGlass size={20} color="#444" />
-                        </span>
-                        <span className="ml-2 text-metal-600">Search</span>
+                    <Link href="/product/add">
+                    <Button className="border-green-400 text-green-500 font-semibold hover:text-green-500 hover:bg-green-50" size="sm" variant="outline">
+                        Add Product
                     </Button>
+                    </Link>
                    <Link href="/contact">
-                        <Button className="bg-green-400 hover:bg-green-500" size="sm">
+                        <Button className="bg-green-400 font-semibold hover:bg-green-500" size="sm">
                             Contact
                         </Button>
                    </Link>
