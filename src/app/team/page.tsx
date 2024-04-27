@@ -6,9 +6,10 @@ interface ITeamPagesProps {
 }
 
 const TeamPages: React.FunctionComponent<ITeamPagesProps> = async (props) => {
-    const res = await fetch("http://localhost:3000/api/team");
-     const convert = await res.json();
-     const teamData = convert.data;
+    const res = await fetch("https://api.escuelajs.co/api/v1/users");
+     const teamData = await res.json();
+     
+     
 
 
     return <section>
