@@ -25,7 +25,7 @@ const Posts: React.FunctionComponent<IPostsProps> = async(props) => {
                             <Image width={400} height={400} className="mx-auto" src="https://t4.ftcdn.net/jpg/02/92/02/75/360_F_292027530_tOeqJbmtM9LwI4YbaaUrbCglVhZuyQth.jpg" alt={title} />
                             <div className="p-6">
                                 <h2 className="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">{
-                                    tags.map((tag: any) => <small>{tag}</small>)
+                                    tags.map((tag: any,index:any) => <small key={index}>{tag}</small>)
                                 }</h2>
                                 <h1 className="title-font text-lg font-medium text-gray-900 mb-3">{title}</h1>
                                 <p className="leading-relaxed mb-3">{body}</p>

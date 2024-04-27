@@ -26,6 +26,7 @@ export const NavBar = () => {
                         <Navbar.Link linkName="Home" href="/" />
                         <Navbar.Link linkName="Prouducts" href="/product" />
                         <Navbar.Link linkName="Gallery" href="/gallery" />
+                        <Navbar.Link linkName="Team" href="/team" />
                         <Navbar.Link linkName="Posts" href="/posts" />
                     </Navbar.Container>
                     <Navbar.Collapse collapseType="sidebar">
@@ -33,6 +34,7 @@ export const NavBar = () => {
                             <Navbar.Link linkName="Home" href="/" />
                             <Navbar.Link linkName="Prouducts" href="/product" />
                             <Navbar.Link linkName="Gallery" href="/gallery" />
+                            <Navbar.Link linkName="Team" href="/team" />
                             <Navbar.Link linkName="Posts" href="/posts" />
                         </Navbar.Container>
                     </Navbar.Collapse>
