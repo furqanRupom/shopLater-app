@@ -2,6 +2,10 @@ import Image from 'next/image';
 import * as React from 'react';
 import Title from '../title/Tittle';
 
+interface IAddToCartComponentProps {
+    id:string;
+}
+
 
 export const generateStaticParams = async() => {
     const response = await fetch('https://dummyjson.com/products').then(res => res.json());
@@ -12,7 +16,7 @@ export const generateStaticParams = async() => {
 
 }
 
-const AddToCartComponent: React.FunctionComponent = async({id}:any) => {
+const AddToCartComponent: React.FunctionComponent<IAddToCartComponentProps> = async({id}:any) => {
     const response = await fetch(`https://fakestoreapi.com/products/${id}`)
     const data = await response.json();
    const {image,title,description,category,price,rating} = data
